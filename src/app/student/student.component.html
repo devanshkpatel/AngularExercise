@@ -1,0 +1,14 @@
+<style type="text/css">
+    .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+    .tftable th {font-size:12px;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+    .tftable tr {background-color:#ffffff;}
+    .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+    .tftable tr:hover {background-color:#ffff99;}
+    </style>
+    
+    <table class="tftable">
+        <tr><th></th><th>Maths</th><th>Physics</th><th>Chemistry</th><th>Avg</th></tr>
+    <tr *ngFor="let i of a"><th>{{i.name}}</th><th>{{i.Maths}}</th><th>{{i.Physics}}</th><th>{{i.Chemistry}}</th><th>{{(i.Maths+i.Physics+i.Chemistry)/3}}</th></tr>
+    </table>
+    
+    
